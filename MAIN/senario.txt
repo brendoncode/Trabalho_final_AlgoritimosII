@@ -1,0 +1,32 @@
+Este algoritmo deve simular o cadastro de veículos e aluguéis de uma Locadora de
+Veículos. O algoritmo deve permitir o cadastro de veículos com os seguintes atributos:
+modelo (texto), ano (inteiro), cor (texto) e acessórios. Os acessórios devem ser registrados
+como um objeto para cada veículo com os seguintes atributos do tipo booleano: ar, vidro
+elétrico e direção.
+Os aluguéis devem ser registrados no objeto de cada veículo como uma propriedade
+em formato de lista. Para cada aluguel o algoritmo deve registrar as seguintes propriedades:
+nome do cliente (texto), valor (float) e quilometragem (inteiro). O algoritmo deve permitir ao
+usuário registrar quantos aluguéis por veículo ele desejar.
+Abaixo segue um exemplo da estrutura de como deve ficar o objeto de cada veículo.
+[{
+	'modelo': 'modelo',
+	'ano': 1233,
+	'cor': 'branco',
+	'acessorios': {
+		'ar': 'true',
+		'vidro-eletrico': 'true',
+		'direcao': 'true'
+	},
+'alugueis': [
+	{
+		'cliente': 'cliente',
+		'valor': 1231.12,
+		'quilometragem': 12312312
+	},
+	{
+		'cliente': 'cliente',
+		'valor': 1231.12,
+		'quilometragem': 12312312
+	}
+	]
+}]
