@@ -14,7 +14,6 @@ def menu():
                         "2 - Cadastrar aluguel \n"
                         "3 - Visualizar Alugueis \n"
                         "4 - Visualizar veículos \n"
-                        "5 - Cadastrar cliente \n"
                         "0 - Sair \n"
                         ": "))
     return escolha
