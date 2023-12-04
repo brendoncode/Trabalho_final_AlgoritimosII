@@ -31,7 +31,7 @@ def cadastrar_veiculo():
     acessorios = {}
     acessorios["ar"] = input("O veículo possui ar condicionado? (S/N): ").upper() == "S"
     acessorios["vidro-eletrico"] = input("O veículo possui vidros elétricos? (S/N): ").upper() == "S"
-    acessorios["direcao"] = input("O veículo possui direção hidráulica? (S/N): ").upper() == "S"
+    acessorios["direcao"] = input("O veículo possui direção elétrica? (S/N): ").upper() == "S"
     return {
         "modelo": modelo,
         "ano": ano,
@@ -141,7 +141,7 @@ def detalhes_aluguel(aluguel, veiculo):
     print(f"Nome do Cliente: {aluguel['cliente']}")
     print(f"Carro Alugado: {veiculo['modelo']} {veiculo['cor']}")
     print(f"Ar-condicionado: {'Sim' if acessorios['ar'] else 'Não'}")
-    print(f"Direção Hidráulica: {'Sim' if acessorios['direcao'] else 'Não'}")
+    print(f"Direção Elétrica: {'Sim' if acessorios['direcao'] else 'Não'}")
     print(f"Vidro Elétrico: {'Sim' if acessorios['vidro-eletrico'] else 'Não'}")
     print(f"Quilometragem Rodada: {aluguel['quilometragem']} KM")
     print(f"Valor por KM: R${aluguel['valor']}")
@@ -189,7 +189,7 @@ def detalhes_veiculo(veiculo):
     print(f"Acessórios:")
     print(f"  - Ar-condicionado: {'Sim' if veiculo['acessorios']['ar'] else 'Não'}")
     print(f"  - Vidro Elétrico: {'Sim' if veiculo['acessorios']['vidro-eletrico'] else 'Não'}")
-    print(f"  - Direção Hidráulica: {'Sim' if veiculo['acessorios']['direcao'] else 'Não'}")
+    print(f"  - Direção Elétrica: {'Sim' if veiculo['acessorios']['direcao'] else 'Não'}")
     print(f"Status: {'Alugado para ' + veiculo['alugueis'][-1]['cliente'] if veiculo['alugueis'] else 'Disponível'}")
 
 
