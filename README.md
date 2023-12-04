@@ -9,7 +9,6 @@ Este é um sistema simples de uma locadora de veículos em Python, que permite c
 - Cadastrar aluguel
 - Visualizar aluguéis
 - Visualizar veículos
-- Visualizar clientes
 
 ## Como Usar
 
