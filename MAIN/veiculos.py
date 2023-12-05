@@ -57,7 +57,7 @@ def salvar_dados(veiculos):
         veiculos (list of Veiculo): Lista de veículos para salvar no arquivo.
     """
     with open('veiculos.json', 'w') as arquivo:
-        json.dump([veiculo.__dict__ for veiculo in veiculos], arquivo)
+        json.dump([veiculo.__dict__ for veiculo in veiculos], arquivo, indent=4)
 
 
 def carregar_dados():
