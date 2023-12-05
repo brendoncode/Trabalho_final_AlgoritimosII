@@ -18,9 +18,8 @@ Este é um sistema simples de uma locadora de veículos em Python, que permite c
 git git@github.com:brendoncode/Trabalho_final_AlgoritimosII.git
 cd Trabalho_final_AlgoritimosII
 Execute o script Python:
-bash
-Copy code
 python main.py
+````
 Siga as instruções no menu para interagir com o sistema.
 Estrutura do Código
 main.py: O script principal que inicia o programa.
